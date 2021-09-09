@@ -34,7 +34,6 @@ resources:
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   # some other comments to send a slack message
   #Template modified  ... so it's time to show a multiline commit message in slack
-  #Template modified  ... so it's time to show a multiline commit message in slack
   #more messages
   limits:
     cpu: 100m
