@@ -33,6 +33,7 @@ resources:
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   # some other comments to send a slack message
+  #more messages
   limits:
     cpu: 100m
     memory: 128Mi
