@@ -33,9 +33,6 @@ resources:
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   # some other comments to send a slack message
-  #Template modified  ... so it's time to show a multiline commit message in slack
-  # some other comments to send a slack message
-  #Template modified  ... so it's time to show a multiline commit message in slac
   limits:
     cpu: 100m
     memory: 128Mi
