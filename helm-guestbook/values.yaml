@@ -30,7 +30,9 @@ ingress:
 resources:
   # We usually recommend not to specify default resources and to leave this as a conscious
   #last test
-  #some changes ...
+  #some changes ...#some changes ...#some changes ...#some changes ...
+  #some changes ...#some changes ...
+  
   limits:
     cpu: 100m
     memory: 128Mi
