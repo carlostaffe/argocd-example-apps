@@ -18,7 +18,7 @@ spec:
   {{- if eq .Values.GlobalMinPods true }}
   minReplicas: 2
   {{- else }}
-  minReplicas: {{ .Values.replicaCounts }}
+  minReplicas: {{ .Values.replicaCount }}
   {{- end }}
   maxReplicas: 10
   metrics:
