@@ -15,8 +15,8 @@ spec:
     kind: Deployment
     name: {{ template "helm-guestbook.fullname" . }}
 
-  {{- if eq .Values.GlobalMinPods true }}
-  minReplicas: 2
+  {{- if eq .Values.GlobalScaleDown true }}
+  minReplicas: {{ .Values.GlobalMinPods }}
   {{- else }}
   minReplicas: {{ .Values.replicaCount }}
   {{- end }}
