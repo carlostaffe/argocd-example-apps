@@ -14,7 +14,12 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: {{ template "helm-guestbook.fullname" . }}
-  minReplicas: {{ .Values.GlobalMinPods }}
+
+  {{- if eq .Values.GlobalMinPods true }}
+  minReplicas: 2
+  {{- else }}
+  minReplicas: {{ .Values.replicaCounts }}
+  {{- end }}
   maxReplicas: 10
   metrics:
     - type: Resource
