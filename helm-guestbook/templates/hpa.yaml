@@ -20,7 +20,7 @@ spec:
   {{- else }}
   minReplicas: {{ .Values.replicaCount }}
   {{- end }}
-  maxReplicas: 10
+  maxReplicas: 100
   metrics:
     - type: Resource
       resource:
