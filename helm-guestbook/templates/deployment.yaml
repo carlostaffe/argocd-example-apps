@@ -8,7 +8,7 @@ metadata:
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
-#  replicas: {{ .Values.replicaCount }}
+  replicas: {{ .Values.replicaCount }}
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -20,6 +20,7 @@ spec:
         app: {{ template "helm-guestbook.name" . }}
         release: {{ .Release.Name }}
     spec:
+      replicas: {{ .Values.replicaCount }}
       schedulerName: secondary-scheduler
       nodeSelector:
         secondaryScheduler: "true"
